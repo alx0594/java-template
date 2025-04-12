@@ -1,0 +1,12 @@
+name: Welcome
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+      required: false
+  jobs:
+    welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        run: "Welcome Java Template"
